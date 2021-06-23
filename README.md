@@ -1,3 +1,3 @@
 # JS Freak
 
-Music sythesizer app 
+Music sythesizer app made with React and Tone.js

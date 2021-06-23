@@ -7,7 +7,7 @@ export default function Drumpad(){
 
         e.preventDefault();
 
-        const synth = new Tone.Synth().toDestination();
+        const synth = new Tone.MetalSynth().toDestination();
 
         console.log(note)
         
@@ -19,7 +19,7 @@ export default function Drumpad(){
     return(
         <div className="drum-area">
 
-            <div className='drumPad' onClick={(e) => sound(e,"F2")}></div>
+            <div className='drumPad' onClick={(e) => sound(e,"F3")}></div>
             <div className='drumPad' onClick={(e) => sound(e,"G2")}></div>
             <div className='drumPad' onClick={(e) => sound(e,"E2")}></div>
             <div className='drumPad' onClick={(e) => sound(e,"A2")}></div>
