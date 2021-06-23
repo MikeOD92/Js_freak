@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  background-color: black;
+}
+.keyBoard {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: auto 0;
+	position: relative;
+	top: 70vh;
+}
+.keyboard {
+	display: grid;
+	grid-template-columns: 40px 15px 40px 15px 40px 40px 15px 40px 15px 40px 15px 40px;
+	grid-template-rows: 100px 100px;
+}
+.lastKeys{
+	display: grid;
+	grid-template-columns: 40px 15px 40px 15px 55px;
+	grid-template-rows: 100px 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.whiteKey {
+	border: 1px solid black;
+	background-color: white;
+	grid-row: 1/4;
+	z-index: 1;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.C,
+.E,
+.F,
+.B {
+	width: 60px;
 }
-
-.App-link {
-  color: #61dafb;
+.D,
+.G,
+.A {
+	width: 65px;
 }
+.D,
+.E,
+.G,
+.A,
+.B {
+	position: relative;
+	right: 5px;
+} 
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.blackKey {
+	background-color: black;
+	grid-row: 1/2;
+	text-align: center;
+	position: relative;
+	left: 5px;
+
+	width: calc(var(--width) / 2);
+	margin-left: calc(var(--width) / -4);
+	margin-right: calc(var(--width) / -4);
+	height: 135px;
+	z-index: 2;
+}
+.drum-area{
+	display: grid;
+	grid-template-columns: 80px 80px;
+	grid-template-rows: auto;
+	gap:20px;
+	position: absolute;
+	top: 20px;
+	right: 70px;
+}
+.drumPad{
+	width: 90px;
+	height: 90px;
+	background: radial-gradient(lightgrey, grey);
+
 }
