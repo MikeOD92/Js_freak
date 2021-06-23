@@ -13,7 +13,7 @@ export default function Drumpad(){
         
         synth.triggerAttack(note);
 
-        synth.triggerRelease("+0.15");
+        synth.triggerRelease("+0.35");
     }
 
     return(
