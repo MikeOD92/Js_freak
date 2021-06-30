@@ -56,7 +56,7 @@ table {
 	justify-content: center;
 	margin: auto 0;
 	position: relative;
-	top: 70vh;
+	top: 45vh;
 }
 .keyboard {
 	display: grid;
@@ -108,18 +108,26 @@ table {
 	height: 135px;
 	z-index: 2;
 }
-.drum-area{
+.sequencer{
+	height: 20vh;
+	background-color: pink;
+}
+.sequencerGrid{
 	display: grid;
-	grid-template-columns: 80px 80px;
+	min-height: 50vh;
+	background: red;
+	grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px;
 	grid-template-rows: auto;
-	gap:20px;
+	gap:5px;
 	position: absolute;
 	top: 20px;
 	right: 70px;
 }
-.drumPad{
-	width: 90px;
-	height: 90px;
+.seqPad{
+	width: 50px;
+	height: 50px;
 	background: radial-gradient(lightgrey, grey);
-
+}
+.activeSeqPad{
+	background: pink;
 }

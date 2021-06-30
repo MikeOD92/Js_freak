@@ -2,10 +2,12 @@ import './App.css';
 import Octave from './components/Octave';
 import Keys from './components/Keys';
 import  Drumpad from './components/Drumpad';
+import Sequencer from './components/Sequencer';
 function App() {
   return (
     <div className="App">
-      <Drumpad/>
+      {/* <Drumpad/> */}
+      <Sequencer/>
       <div className="keyBoard">
         <Octave pitch={3}/>
         <Octave pitch={4}/>

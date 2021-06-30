@@ -8,12 +8,13 @@ export default function Drumpad(){
         e.preventDefault();
 
         const synth = new Tone.MetalSynth().toDestination();
+        const now = Tone.now();
 
-        console.log(note)
+        // console.log(note)
         
-        synth.triggerAttack(note);
+        synth.triggerAttack(note, now);
 
-        synth.triggerRelease("+0.35");
+        synth.triggerRelease("+0.15");
     }
 
     return(
