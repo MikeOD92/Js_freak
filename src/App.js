@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       {/* <Drumpad/> */}
-      <Sequencer/>
+      {/* <Sequencer/> */}
       <div className="keyBoard">
         <Octave pitch={3}/>
         <Octave pitch={4}/>
